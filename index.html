@@ -1,119 +1,97 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Introduction</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Dung's Introduction</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <a class="skip-link" href="#main-content">Skip to Main Content</a>
 
-    <header>
-        <h1>My Introduction</h1>
+    <header class="site-header">
+        <div class="hero">
+            <img class="profile-image" src="https://avatars.githubusercontent.com/u/241063261?v=4" alt="Dung's GitHub profile avatar">
+            <div>
+                <p class="eyebrow">Software Engineering Student</p>
+                <h1>My Introduction</h1>
+                <p>
+                    Hello, my name is Dung. I study Software Engineering at FPT University
+                    Can Tho and enjoy technology, gaming, and creative projects.
+                </p>
+            </div>
+        </div>
 
-        <p>
-            Hello, my name is Dung. I am a Software Engineering student who is interested in
-            technology, gaming, and self-development.
-        </p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a class="active" aria-current="page" href="index.html">Home</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <hr>
-
-    <main>
-
-        <section>
-            <h2>1. Learning</h2>
+    <main id="main-content">
+        <section class="page-intro">
+            <h2>About Me</h2>
             <p>
-                I am currently learning Software Engineering at FPT University Can Tho campus.
-                I want to improve my coding skills and understand how software is built in real projects.
+                I want to understand how useful software is planned, designed, and developed.
+                My long-term goal is to turn ideas into digital experiences that people can enjoy.
             </p>
         </section>
 
-        <section>
-            <h2>2. Gaming</h2>
-            <p>
-                Gaming is one of my favorite hobbies. I enjoy playing Honkai: Star Rail, especially
-                building characters and optimizing their performance.
-            </p>
+        <section class="info-grid" aria-label="Personal interests and goals">
+            <article class="card">
+                <h2>Learning</h2>
+                <p>
+                    I am improving my programming, web development, problem-solving, and teamwork skills.
+                </p>
+            </article>
 
-            <p>
-                One of my proudest gaming achievements is having my Tribbie ranked Top 21 among
-                29.5k players, placing her in the Top 1%.
-            </p>
+            <article class="card">
+                <h2>Gaming</h2>
+                <p>
+                    I enjoy Honkai: Star Rail, especially building characters and optimizing their performance.
+                </p>
+            </article>
 
-            <p>
-                External link:
-                <a href="https://hsr.hoyoverse.com/" target="_blank">
-                    Honkai: Star Rail Official Website
+            <article class="card">
+                <h2>Self Project</h2>
+                <p>
+                    Lord of Malice is my game idea combining RTS and RPG gameplay, kingdom management,
+                    storytelling, and nightmare battles.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>Creative Vision</h2>
+                <p>
+                    I want my future projects to combine technology, atmosphere, gameplay, and personality.
+                </p>
+            </article>
+        </section>
+
+        <section class="feature">
+            <div>
+                <h2>A Gaming Achievement</h2>
+                <p>
+                    One of my proudest achievements is having my Tribbie ranked Top 21 among
+                    approximately 29,500 players, placing her in the Top 1%.
+                </p>
+                <a class="button-link" href="https://hsr.hoyoverse.com/" target="_blank" rel="noopener noreferrer">
+                    Visit the Honkai: Star Rail website
                 </a>
-            </p>
+            </div>
+            <img src="tribbie-top21.png" alt="Tribbie character ranking showing a Top 21 achievement">
         </section>
-
-        <section>
-            <h2>3. Self Project</h2>
-            <p>
-                One of my personal projects is Lord of Malice (LoM), a game idea that combines
-                RTS and RPG gameplay. In this project, players manage a kingdom during the day
-                and fight through nightmares at night.
-            </p>
-
-            <p>
-                This project helps me practice game design, storytelling, programming logic,
-                and system planning. Although it is still an idea, it motivates me to improve
-                my skills and learn more about software development.
-            </p>
-        </section>
-
-        <section>
-            <h2>4. Creative Vision</h2>
-            <p>
-                I am interested in creating digital experiences that combine technology,
-                storytelling, and gameplay. I want my projects to be more than just programs;
-                I want them to have personality, atmosphere, and meaning.
-            </p>
-
-            <p>
-                My creative vision is to keep learning, experimenting, and building projects
-                that reflect my own ideas. Through coding and game design, I hope to turn
-                imagination into something people can actually experience.
-            </p>
-        </section>
-
-        <hr>
-
-        <section>
-            <h2>My Images</h2>
-
-            <p>Image 1:</p>
-            <img src="tribbie-top21.png" width="600" alt="Tribbie Top 21 Achievement">
-
-            <p>Image 2:</p>
-            <img src="image2.jpg" width="500" alt="Image 2">
-
-            <p>Image 3:</p>
-            <img src="image3.jpg" width="500" alt="Image 3">
-
-            <p>Image 4:</p>
-            <img src="image4.jpg" width="500" alt="Image 4">
-        </section>
-
     </main>
 
-    <hr>
-
     <footer>
-        <h2>Contact</h2>
-
+        <p>&copy; 2026 Dung. Built for a web design course project.</p>
         <p>
-            Thank you for visiting my personal introduction website.
-            If you want to know more about me or my projects, feel free to contact me.
+            <a href="mailto:ddoannguyentan@gmail.com">Email</a> |
+            <a href="https://github.com/LeoDoan-fpt" target="_blank" rel="noopener noreferrer">GitHub</a>
         </p>
-
-        <ul>
-            <li>Email: ddoannguyentan@gmail.com</li>
-            <li>GitHub: <a href="https://github.com/LeoDoan-fpt" target="_blank">LeoDoan-fpt</a></li>
-            <li>Game: <a href="https://hsr.hoyoverse.com/" target="_blank">Honkai: Star Rail</a></li>
-        </ul>
     </footer>
-
 </body>
 </html>
