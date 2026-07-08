@@ -26,36 +26,75 @@
 
     <main id="main-content">
         <section class="page-intro">
-            <h2>Images From My Introduction Project</h2>
+            <h2>Interactive Image Gallery</h2>
             <p>
                 This gallery collects images related to my interests, gaming achievements,
-                and personal introduction. Move the pointer over an image to see the hover effect.
+                and personal introduction. Move the pointer over an image to update the preview box.
             </p>
         </section>
 
+        <div id="image">
+            Hover over an image below to display here.
+        </div>
+
         <section class="gallery-grid" aria-label="Personal image gallery">
             <figure>
-                <img src="tribbie-top21.png" alt="Tribbie ranking showing a Top 21 achievement">
+                <img class="preview"
+                     src="tribbie-top21.png"
+                     alt="Tribbie ranking showing a Top 21 achievement"
+                     onmouseover="upDate(this)"
+                     onmouseout="unDo()"
+                     onfocus="upDate(this)"
+                     onblur="unDo()"
+                     tabindex="0">
                 <figcaption>My Tribbie Top 21 achievement.</figcaption>
             </figure>
 
             <figure>
-                <img src="image2.jpg" alt="Second personal image from the introduction project">
+                <img class="preview"
+                     src="image2.jpg"
+                     alt="Second personal image from the introduction project"
+                     onmouseover="upDate(this)"
+                     onmouseout="unDo()"
+                     onfocus="upDate(this)"
+                     onblur="unDo()"
+                     tabindex="0">
                 <figcaption>A personal image from my original website.</figcaption>
             </figure>
 
             <figure>
-                <img src="image3.jpg" alt="Third personal image from the introduction project">
+                <img class="preview"
+                     src="image3.jpg"
+                     alt="Third personal image from the introduction project"
+                     onmouseover="upDate(this)"
+                     onmouseout="unDo()"
+                     onfocus="upDate(this)"
+                     onblur="unDo()"
+                     tabindex="0">
                 <figcaption>Another image connected to my interests.</figcaption>
             </figure>
 
             <figure>
-                <img src="image4.jpg" alt="Fourth personal image from the introduction project">
+                <img class="preview"
+                     src="image4.jpg"
+                     alt="Fourth personal image from the introduction project"
+                     onmouseover="upDate(this)"
+                     onmouseout="unDo()"
+                     onfocus="upDate(this)"
+                     onblur="unDo()"
+                     tabindex="0">
                 <figcaption>An image included in my first HTML assignment.</figcaption>
             </figure>
 
             <figure>
-                <img src="https://avatars.githubusercontent.com/u/241063261?v=4" alt="Dung's GitHub profile avatar">
+                <img class="preview"
+                     src="https://avatars.githubusercontent.com/u/241063261?v=4"
+                     alt="Dung's GitHub profile avatar"
+                     onmouseover="upDate(this)"
+                     onmouseout="unDo()"
+                     onfocus="upDate(this)"
+                     onblur="unDo()"
+                     tabindex="0">
                 <figcaption>My GitHub profile avatar.</figcaption>
             </figure>
         </section>
@@ -68,5 +107,7 @@
             <a href="https://github.com/LeoDoan-fpt" target="_blank" rel="noopener noreferrer">GitHub</a>
         </p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
