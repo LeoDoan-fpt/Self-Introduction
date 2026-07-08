@@ -6,7 +6,7 @@
     <title>Gallery | Dung's Introduction</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="addTabFocus()">
     <a class="skip-link" href="#main-content">Skip to Main Content</a>
 
     <header class="site-header compact-header">
@@ -29,7 +29,8 @@
             <h2>Interactive Image Gallery</h2>
             <p>
                 This gallery collects images related to my interests, gaming achievements,
-                and personal introduction. Move the pointer over an image to update the preview box.
+                and personal introduction. Move the pointer over an image or use the Tab key
+                to update the preview box.
             </p>
         </section>
 
@@ -43,10 +44,9 @@
                      src="tribbie-top21.png"
                      alt="Tribbie ranking showing a Top 21 achievement"
                      onmouseover="upDate(this)"
-                     onmouseout="unDo()"
+                     onmouseleave="unDo()"
                      onfocus="upDate(this)"
-                     onblur="unDo()"
-                     tabindex="0">
+                     onblur="unDo()">
                 <figcaption>My Tribbie Top 21 achievement.</figcaption>
             </figure>
 
@@ -55,10 +55,9 @@
                      src="image2.jpg"
                      alt="Second personal image from the introduction project"
                      onmouseover="upDate(this)"
-                     onmouseout="unDo()"
+                     onmouseleave="unDo()"
                      onfocus="upDate(this)"
-                     onblur="unDo()"
-                     tabindex="0">
+                     onblur="unDo()">
                 <figcaption>A personal image from my original website.</figcaption>
             </figure>
 
@@ -67,10 +66,9 @@
                      src="image3.jpg"
                      alt="Third personal image from the introduction project"
                      onmouseover="upDate(this)"
-                     onmouseout="unDo()"
+                     onmouseleave="unDo()"
                      onfocus="upDate(this)"
-                     onblur="unDo()"
-                     tabindex="0">
+                     onblur="unDo()">
                 <figcaption>Another image connected to my interests.</figcaption>
             </figure>
 
@@ -79,10 +77,9 @@
                      src="image4.jpg"
                      alt="Fourth personal image from the introduction project"
                      onmouseover="upDate(this)"
-                     onmouseout="unDo()"
+                     onmouseleave="unDo()"
                      onfocus="upDate(this)"
-                     onblur="unDo()"
-                     tabindex="0">
+                     onblur="unDo()">
                 <figcaption>An image included in my first HTML assignment.</figcaption>
             </figure>
 
@@ -91,11 +88,21 @@
                      src="https://avatars.githubusercontent.com/u/241063261?v=4"
                      alt="Dung's GitHub profile avatar"
                      onmouseover="upDate(this)"
-                     onmouseout="unDo()"
+                     onmouseleave="unDo()"
                      onfocus="upDate(this)"
-                     onblur="unDo()"
-                     tabindex="0">
+                     onblur="unDo()">
                 <figcaption>My GitHub profile avatar.</figcaption>
+            </figure>
+
+            <figure>
+                <img class="preview"
+                     src="https://picsum.photos/600/400?random=6"
+                     alt="A peaceful landscape image representing my creative inspiration"
+                     onmouseover="upDate(this)"
+                     onmouseleave="unDo()"
+                     onfocus="upDate(this)"
+                     onblur="unDo()">
+                <figcaption>A peaceful image for creative inspiration.</figcaption>
             </figure>
         </section>
     </main>
