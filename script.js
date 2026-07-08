@@ -1,5 +1,5 @@
 function upDate(previewPic) {
-    console.log("Mouse over event triggered");
+    console.log("Mouse or keyboard event triggered");
     console.log("Alt text: " + previewPic.alt);
     console.log("Image source: " + previewPic.src);
 
@@ -8,8 +8,18 @@ function upDate(previewPic) {
 }
 
 function unDo() {
-    console.log("Mouse out event triggered");
+    console.log("Preview reset");
 
     document.getElementById("image").innerHTML = "Hover over an image below to display here.";
     document.getElementById("image").style.backgroundImage = "url('')";
+}
+
+function addTabFocus() {
+    console.log("Adding tabindex to gallery images");
+
+    var images = document.querySelectorAll(".preview");
+
+    for (var i = 0; i < images.length; i++) {
+        images[i].setAttribute("tabindex", "0");
+    }
 }
