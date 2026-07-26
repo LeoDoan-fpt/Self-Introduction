@@ -78,14 +78,38 @@ figure img {
     border: 2px solid #006d77;
 }
 
-/* Keep the game screenshots near their real resolution instead of enlarging them. */
-.grid figure:nth-child(n + 6) img {
-    width: auto;
-    max-width: 100%;
+/* Do not enlarge the game screenshots beyond their real crop size. */
+.grid figure:nth-child(n + 6) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rok-shot {
+    width: 100%;
+    height: auto;
     margin-inline: auto;
+    object-fit: contain;
+}
+
+.rok-avatar {
+    max-width: 440px;
+}
+
+.rok-profile {
+    max-width: 380px;
+}
+
+.rok-vip {
+    max-width: 450px;
+}
+
+.rok-report {
+    max-width: 420px;
 }
 
 figcaption {
+    width: 100%;
     padding-top: 0.75rem;
     font-weight: 600;
 }
