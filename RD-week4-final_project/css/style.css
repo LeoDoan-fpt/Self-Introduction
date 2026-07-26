@@ -78,6 +78,13 @@ figure img {
     border: 2px solid #006d77;
 }
 
+/* Keep the game screenshots near their real resolution instead of enlarging them. */
+.grid figure:nth-child(n + 6) img {
+    width: auto;
+    max-width: 100%;
+    margin-inline: auto;
+}
+
 figcaption {
     padding-top: 0.75rem;
     font-weight: 600;
